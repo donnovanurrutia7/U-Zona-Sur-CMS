@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "proyeccion_sections",
+  "info": {
+    "singularName": "proyeccion-section",
+    "pluralName": "proyeccion-sections",
+    "displayName": "Proyeccion Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kicker": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "imagenLateral": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "pilares": {
+      "type": "component",
+      "component": "shared.pilar-proyeccion",
+      "repeatable": true
+    }
+  }
+}

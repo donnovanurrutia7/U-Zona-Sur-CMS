@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "promocion_activas",
+  "info": {
+    "singularName": "promocion-activa",
+    "pluralName": "promocion-activas",
+    "displayName": "Promocion Activa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "activa": {
+      "type": "boolean"
+    },
+    "kicker": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "tituloDestacado": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "vigenciaTexto": {
+      "type": "string"
+    },
+    "afiche": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

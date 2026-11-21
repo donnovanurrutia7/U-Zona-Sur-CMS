@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "nosotros_sections",
+  "info": {
+    "singularName": "nosotros-section",
+    "pluralName": "nosotros-sections",
+    "displayName": "Nosotros Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kicker": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "parrafo1": {
+      "type": "text"
+    },
+    "parrafo2": {
+      "type": "text"
+    },
+    "imagenEquipo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "etiquetaFoto": {
+      "type": "string"
+    },
+    "valores": {
+      "type": "component",
+      "component": "shared.valor-institucional",
+      "repeatable": true
+    }
+  }
+}

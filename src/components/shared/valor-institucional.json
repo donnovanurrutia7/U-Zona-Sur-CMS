@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_valor_institucionals",
+  "info": {
+    "displayName": "Valor Institucional"
+  },
+  "options": {},
+  "attributes": {
+    "numero": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

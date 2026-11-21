@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sedes",
+  "info": {
+    "singularName": "sede",
+    "pluralName": "sedes",
+    "displayName": "Sede"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "orden": {
+      "type": "integer"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "tipoFormacion": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "recinto": {
+      "type": "string"
+    },
+    "diasEntrenamiento": {
+      "type": "string"
+    },
+    "horariosDetalle": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "email"
+    },
+    "edades": {
+      "type": "string"
+    },
+    "director": {
+      "type": "string"
+    },
+    "notaAclaratoria": {
+      "type": "text"
+    },
+    "googleMapsQuery": {
+      "type": "string"
+    },
+    "inscripcions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::inscripcion.inscripcion",
+      "mappedBy": "sede"
+    }
+  }
+}

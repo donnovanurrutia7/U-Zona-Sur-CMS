@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "global_configs",
+  "info": {
+    "singularName": "global-config",
+    "pluralName": "global-configs",
+    "displayName": "Global Config"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "telefonoWhatsApp": {
+      "type": "string"
+    },
+    "mensajeWhatsApp": {
+      "type": "string"
+    },
+    "correoContacto": {
+      "type": "email"
+    },
+    "instagramUrl": {
+      "type": "string"
+    },
+    "logoHeader": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

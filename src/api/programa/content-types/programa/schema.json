@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programas",
+  "info": {
+    "singularName": "programa",
+    "pluralName": "programas",
+    "displayName": "Programa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "orden": {
+      "type": "integer"
+    },
+    "etiquetaNumero": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "subtituloCorto": {
+      "type": "string"
+    },
+    "edades": {
+      "type": "string"
+    },
+    "horarios": {
+      "type": "string"
+    },
+    "valorMensual": {
+      "type": "string"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "inscripcions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::inscripcion.inscripcion",
+      "mappedBy": "programa"
+    }
+  }
+}
